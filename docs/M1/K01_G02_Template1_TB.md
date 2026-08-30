@@ -140,15 +140,10 @@ Definisikan apa yang ingin dicapai oleh pengguna saat menggunakan sistem ini dal
 | US-08 | Admin | Memblokir atau menghapus listing dan akun yang dilaporkan bermasalah | Menjaga kualitas dan keamanan platform |
 
 ## 3.3 Model Proses Bisnis
-Buatlah *Activity Diagram* atau *Swimlane Diagram* yang menunjukkan alur kerja proses bisnis dari sistem solusi. Diagram ini harus memvisualisasikan bagaimana alur operasional di dunia nyata berjalan lebih efisien dengan adanya interaksi antara aktor (yang didefinisikan pada poin 3.1) dan sistem perangkat lunak. Perhatikan notasi yang digunakan dalam pembuatannya.
-<br>
 
 <p align="center">
-<img alt="Contoh Activity Diagram" src="./assets/diagram/diagram-act-1.avif" width="70%">
-</p>
-<p align="center">
-<i>Gambar 1. Contoh Activity Diagram</i>
-</p>
+<img src="https://uml.planttext.com/plantuml/png/XLF9JkH03BtdAomEA3aWa9YP0no6xJ8715BtV82RE1sJgagf5X1IV_pObKu0GMikYLBsM-hPkOe9GyhMLBj7iXio3FKzzXWvlYByMTyqkwgqL1Vtv9umC6mmeDj2_NTrSdRUN5RLRiKnaTsL5hIUpO0EbCE0dq3oRQI91JV15NPGK7Wi6-vdgLRWbcmsoF3KOvgqVtpHff2ZIdkAydnXX5YgC8msEnv41DWb2WxDnF6pcOouvwn7tnWHKhQufzmRsQ31M9pyxne6XwoE76t7oAhVOzXY8H9ZNkvo-t0dBDn1VUrnm1vMfEzI-Dr0wib1lUOMXxdIL00QqGOJbgY3XkpKP762xb8wOXfzHIOIr1zmXzqAvmq5CPLXoUCnZ94YF7ITOKUdugXHweddG6R5svAQc7pJ8SAn1EVUA62lZkST-YnGo1MznK6FzzFp1bCt1ZjNqRMuhE7HAhSIsfg2sZcQnlfhiJclnvIOfo2mp18EfXpddLnaU_JlfpAam5_MEDjit-DrBNVLbRpq3_e7" alt="Activity Diagram Proses Bisnis" width="600">
+
 
 <br>
 
