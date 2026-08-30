@@ -6,7 +6,7 @@
 |---|---|
 | Kelas | *K1* |
 | Nomor Kelompok | *2* |
-| Nama Kelompok | *[Nama Kelompok]* |
+| Nama Kelompok | *Indes A* |
 | Nama Perangkat Lunak | *ITBELI* |
 
 **Anggota Kelompok:**
@@ -54,7 +54,7 @@ Silakan catat penggunaan AI yang berdampak signifikan pada pengerjaan tugas (mis
 | *Google Gemini 2.5 Flash* | *Permintaan contoh umum aspek pembanding untuk tabel pada subbab 2.1.4 (penanggung jawab: Sulthan Dhiyazka Suwandi).* | *"Secara umum, aspek apa saja yang biasa dipakai untuk membandingkan dua platform yang melayani kebutuhan serupa? Berikan contoh aspek pembandingnya saja."* | *Daftar aspek umum dari AI kami saring dan ganti sebagian. Aspek yang terlalu umum kami buang, lalu kami tentukan sendiri enam aspek pembanding yang langsung memetakan empat celah pada subbab 1.2. Isi setiap sel tabel diisi berdasarkan pengamatan dan pengalaman langsung anggota kelompok sebagai pengguna kanal informal dan marketplace umum, bukan dari keluaran AI.* |
 | *Google Gemini 2.5 Flash* | *Penggalian ide arah pengembangan jangka panjang untuk roadmap pada subbab 2.1.2 (penanggung jawab: Sulthan Dhiyazka Suwandi).* | *"Secara umum, tahapan apa saja yang biasa ditempuh sebuah aplikasi web ketika ingin dikembangkan ke arah aplikasi mobile? Sebutkan garis besarnya saja."* | *Ide tahapan dari AI kami rumuskan ulang menjadi tiga tahap yang sesuai dengan kondisi ITBELI. Kelompok menambahkan sendiri penegasan bahwa seluruh roadmap berada di luar cakupan pengerjaan tugas besar, agar tidak terbaca sebagai kebutuhan yang dijanjikan akan diimplementasikan.* |
 | *[Nama AI]* | *[Tujuan penggunaan untuk subbab 1.1 dan 1.2 - penanggung jawab: Dhanesworo Muhammad Datiputro. Isi sesuai batas penggunaan yang diizinkan: konsep, ide, outline, alternatif, atau contoh umum]* | *[Tuliskan Prompt Utama, atau tandai "-" jika tidak menggunakan AI]* | *[Tuliskan Keputusan Hasil Validasi]* |
-| *[Nama AI]* | *[Tujuan penggunaan untuk subbab 2.2 - penanggung jawab: Ghaniyul Amri Caulava]* | *[Tuliskan Prompt Utama, atau tandai "-" jika tidak menggunakan AI]* | *[Tuliskan Keputusan Hasil Validasi]* |
+| *[Nama AI]* | *[Tujuan penggunaan untuk subbab 2.2 - penanggung jawab: Ghaniyul Amri Caulava]* | *[-]* | *[Tuliskan Keputusan Hasil Validasi]* |
 | *[Nama AI]* | *[Tujuan penggunaan untuk subbab 3.1 dan 3.2 - penanggung jawab: Nazhif Hilmi Kistijantoro]* | *[Tuliskan Prompt Utama, atau tandai "-" jika tidak menggunakan AI]* | *[Tuliskan Keputusan Hasil Validasi]* |
 | *[Nama AI]* | *[Tujuan penggunaan untuk subbab 3.3 - penanggung jawab: I Made Adi Kusuma Ardana]* | *[Tuliskan Prompt Utama, atau tandai "-" jika tidak menggunakan AI]* | *[Tuliskan Keputusan Hasil Validasi]* |
 
