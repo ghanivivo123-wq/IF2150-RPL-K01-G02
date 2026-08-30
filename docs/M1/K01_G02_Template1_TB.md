@@ -71,18 +71,23 @@ Abstraksikan solusi perangkat lunak yang diusulkan dari sudut pandang pengguna. 
 ## 3.1 Identifikasi Aktor
 | Aktor | Deskripsi |
 | :--- | :--- |
-| *Penjual (Mahasiswa ITB)* | Pengguna yang berniat untuk menjual barang preloved miliknya. Mengutamakan kemudahan proses listing, jangkauan listing kepada pembeli, dan reliabilitas sistem. |
-| *Pembeli (Mahasiswa ITB)* | Pengguna yang berniat untuk membeli barang preloved. Mengutamakan keamanan transaksi, pencarian yang jelas dan informasi yang jelas, dan reliabilitas sistem. |
-| *Admin* | Pihak yang mengelola platform. Mengutamakan reliabilitas sistem, kemudahan untuk tracking masalah atau bug, sistem report/laporan yang mudah diverifikasi dan ditangani. |
+| Penjual (Mahasiswa ITB) | Pengguna yang berniat untuk menjual barang preloved miliknya. Mengutamakan kemudahan proses listing, jangkauan listing kepada pembeli, dan reliabilitas sistem. |
+| Pembeli (Mahasiswa ITB) | Pengguna yang berniat untuk membeli barang preloved. Mengutamakan keamanan transaksi, pencarian yang jelas dan informasi yang jelas, dan reliabilitas sistem. |
+| Admin | Pihak yang mengelola platform. Mengutamakan reliabilitas sistem, kemudahan untuk tracking masalah atau bug, sistem report/laporan yang mudah diverifikasi dan ditangani. |
 
 ## 3.2 Kebutuhan Pengguna Awal
 Definisikan apa yang ingin dicapai oleh pengguna saat menggunakan sistem ini dalam format *User Story* (Sebagai [Aktor], saya ingin [Aktivitas/Kebutuhan], sehingga [Tujuan/Nilai]). Pastikan kalian berfokus pada "apa yang ingin dilakukan pengguna".
 
 | ID | Aktor | Kebutuhan / Aktivitas | Tujuan / Nilai |
 | :--- | :--- | :--- | :--- |
-| US-01 | *Kasir* |  *Memindai barcode barang* | *Proses pembayaran berjalan cepat dan akurat* |
-| US-02 | *[Nama Aktor]* | *[Kebutuhan pengguna]* | *[Tujuan yang dicapai pengguna]* |
-| ... | ... | ... | ... |
+| US-01 | Penjual/Pembeli |  Mendaftar menggunakan email ITB | Hanya warga ITB yang dapat mendaftar dan memiliki informasi yang jelas sehingga menambahkan rasa keamanan |
+| US-02 | Penjual | Membuat listing barang | Barang dapat ditunjukkan kepada calon pembeli. |
+| US-03 | Pembeli | Mencari barang yang diinginkan berdasarkan nama, harga, kategori, dll. | Pembeli dapat mencari barang sesuai yang diinginkan dengan mudah. |
+| US-04 | Penjual/Pembeli | Berkomunikasi dengan penjual/pembeli. | Penjual dan pembeli dapat bernegosiasi dan menyepakati transaksi tanpa keluar platform. |
+| US-05 | Penjual/Pembeli | Sistem komunikasi yang aman dan tidak dapat dilihat oleh admin. | Menjaga privasi pengguna platform. |
+| US-06 | Penjual | Menandai barang sudah terjual | Listing tidak lagi muncul di pencarian pembeli dan menghindari kesalahpahaman |
+| US-07 | Admin | Melihat laporan masalah dari pengguna | Menjaga kualitas dan keamanan platform |
+| US-08 | Admin | Memblokir atau menghapus listing dan akun yang dilaporkan bermasalah | Menjaga kualitas dan keamanan platform |
 
 ## 3.3 Model Proses Bisnis
 Buatlah *Activity Diagram* atau *Swimlane Diagram* yang menunjukkan alur kerja proses bisnis dari sistem solusi. Diagram ini harus memvisualisasikan bagaimana alur operasional di dunia nyata berjalan lebih efisien dengan adanya interaksi antara aktor (yang didefinisikan pada poin 3.1) dan sistem perangkat lunak. Perhatikan notasi yang digunakan dalam pembuatannya.
