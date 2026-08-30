@@ -32,10 +32,20 @@ Dipersiapkan oleh:
 # BAB 1: Analisis Permasalahan
 
 ## 1.1 Latar Belakang Masalah
-Tuliskan deskripsi permasalahan yang kalian pilih secara naratif dan spesifik. Tambahkan keterkaitan permasalahan tersebut dengan Tujuan Pembangunan Berkelanjutan (SDGs) yang telah disepakati. Dukung argumen kalian dengan data yang kredibel, serta jelaskan urgensi mengapa masalah ini perlu dan layak untuk segera diselesaikan.
+Konsumsi barang di kalangan mahasiswa, khususnya mahasiswa ITB, memiliki karakteristik siklus pakai yang pendek namun frekuensi pembelian yang tinggi. Contoh nyatanya seperti jas praktikum dan alat lab yang hanya relevan selama masa perkuliahan tertentu, buku mata kuliah yang menumpuk begitu semester berakhir, kalkulator scientific, hingga perlengkapan kos yang sering ditinggalkan atau dibuang saat mahasiswa pindah kos maupun lulus. Barang-barang ini secara fisik masih layak pakai, namun kehilangan relevansi penggunaan bagi pemiliknya dalam waktu yang cukup singkat.
+
+Pola konsumsi seperti ini sejalan dengan isu global yang diangkat dalam Sustainable Development Goals (SDG) 12: Responsible Consumption and Production, khususnya target 12.5 yang menekankan pengurangan timbulan limbah melalui pencegahan, pengurangan, daur ulang, dan penggunaan kembali (reuse). Di tingkat nasional, permasalahan ini terkonfirmasi oleh data Sistem Informasi Pengelolaan Sampah Nasional (SIPSN) KLHK, yang menunjukkan bahwa limbah kain atau tekstil menyumbang sekitar 2,6% dari total timbulan sampah nasional, sementara limbah kertas dan karton  menyumbang angka yang lebih besar, yakni 10,7%. Angka ini merepresentasikan jutaan ton barang yang sebenarnya memiliki potensi sirkularitas tinggi. Sebagian besar dari barang-barang tersebut secara fungsi masih sangat layak dipakai ulang, namun berakhir di tempat pembuangan semata-mata karena ketiadaan ekosistem perpindahan kepemilikan yang efektif kepada mereka yang membutuhkan.
+
+Urgensi masalah ini terletak pada dua sisi. Di sisi lingkungan, barang yang tidak di-reuse berkontribusi pada limbah dan mendorong produksi barang baru yang tidak perlu. Lalu pada sisi ekonomi mahasiswa, banyak barang bernilai justru dibiarkan menumpuk atau dibuang padahal bisa dijual atau dipakai ulang oleh mahasiswa lain yang justru hanya membutuhkan versi bekas dengan harga yang lebih terjangkau.
 
 ## 1.2 Analisis Kondisi Saat Ini
-Lakukan analisis terhadap proses yang berjalan saat ini di dunia nyata, baik itu sistem lama ataupun solusi yang sudah ada. Soroti kesenjangan atau celah dari kondisi tersebut yang nantinya akan diselesaikan oleh perangkat lunak kalian.
+Saat ini, transaksi jual beli barang preloved di kalangan mahasiswa ITB umumnya berlangsung secara informal melalui grup WhatsApp atau Line per angkatan atau himpunan, story Instagram pribadi, atau marketplace umum yang tidak dikhususkan untuk lingkungan ITB.
+
+Beberapa celah dari kondisi ini:
+- **Fragmentasi informasi**: listing barang tersebar di puluhan grup berbeda tanpa sistem pencarian terpusat, sehingga calon pembeli sulit menemukan barang yang dicari dan penjual sulit menjangkau pembeli potensial di luar lingkaran pertemanannya.
+- **Minim kepercayaan**: tidak ada sistem verifikasi identitas atau riwayat transaksi, sehingga rawan penipuan atau miskomunikasi harga ataupun kondisi barang.
+- **Tidak ada kategori/filter khusus kebutuhan kampus**: marketplace umum tidak punya kategori seperti "jas praktikum", "buku mata kuliah [kode MK]", atau "perlengkapan kos", membuat pencarian barang relevan-kampus menjadi tidak efisien dan lebih susah.
+- **Proses transaksi manual**: nego harga, kesepakatan COD, dan konfirmasi dilakukan manual via chat pribadi tanpa histori atau standar yang jelas, memperlambat proses dan meningkatkan risiko miskomunikasi.
 
 ---
 
