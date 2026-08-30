@@ -14,16 +14,16 @@ TOPIC BRAINSTORMING
 Dipersiapkan oleh:
 | Informasi | Keterangan |
 | --- | --- |
-| Kelas | *\[Kelas\]* |
-| Kelompok | *\[Nomor Kelompok\]*  |
+| Kelas | *K1* |
+| Kelompok | *2*  |
 
 | NIM | Nama |
 |---|---|
-| *[NIM 1]* | *[Nama Anggota 1]* |
-| *[NIM 2]* | *[Nama Anggota 2]* |
-| *[NIM 3]* | *[Nama Anggota 3]* |
-| *[NIM 4]* | *[Nama Anggota 4]* |
-| *[NIM 5]* | *[Nama Anggota 5]* |
+| *13525124* | *Sulthan Dhiyazka Suwandi* |
+| *13525034* | *Dhanesworo Muhammad Datiputro* |
+| *13525115* | *Nazhif Hilmi Kistijantoro* |
+| *13525121* | *I Made Adi Kusuma Ardana* |
+| *13525106* | *Ghaniyul AMri Caulava* |
 ---
 
 <br>
@@ -45,8 +45,15 @@ Lakukan analisis terhadap proses yang berjalan saat ini di dunia nyata, baik itu
 Abstraksikan solusi perangkat lunak yang diusulkan dari sudut pandang pengguna. Jelaskan target platform yang akan digunakan (misalnya: desktop application) beserta alasan pemilihannya. Deskripsikan juga nilai unik (inovasi inti) dari perangkat lunak kalian dan apa yang membedakannya dari solusi yang sudah ada.
 
 ## 2.2 Asumsi dan Batasan
-Definisikan secara tegas asumsi (baik teknis maupun dari sisi pengguna) yang menjadi dasar pengembangan. Tuliskan batasan seperti regulasi/hukum, keterbatasan sumber daya, dan ruang lingkup solusi.
+**Asumsi :**
+- Pengguna memiliki perangkat modern dengan akses internet yang memadai seperti handphone, tablet, maupun laptop/pc
+- Pengguna merupakan mahasiswa aktif ITB yang memiliki email dengan domain @itb.ac.id 
+- Transaksi pembayaran dan serah terima barang sepenuhnya dilakukan secara langsung antara penjual dan pembeli(COD), diluar tanggung jawab sistem dan pengembang
 
+**Batasan :**
+- Sistem tidak dapat melayani proses pembayaran secara digital atau sebagai perantara pembayaran antara penjual dan pembeli
+- Platform ini hanya ditujukaan untuk civitas dan mahasiswa ITB(bukan untuk khalayak umum)
+- Sistem keamanan dan banyaknya bug kemungkinan bisa terjadi karena durasi pengerjaan yang singkat
 ---
 
 # BAB 3: Spesifikasi Kebutuhan dan Proses Bisnis
