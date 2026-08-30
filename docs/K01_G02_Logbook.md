@@ -42,7 +42,7 @@
 | *29-08-2026* | *Nazhif Hilmi Kistijantoro* | *Menyusun subbab 3.2 Kebutuhan Pengguna Awal: perumusan delapan user story (US-01 hingga US-08) dalam format aktor, kebutuhan, dan nilai* | *3* | *Done* | *Sempat terjadi tumpang tindih antara user story penjual dan pembeli sehingga perlu dirumuskan ulang agar setiap user story merepresentasikan satu kebutuhan yang jelas* | 
 | *29-08-2026* | *I Made Adi Kusuma Ardana* | *Menyusun subbab 3.3 Model Proses Bisnis: pemetaan alur proses bisnis jual beli preloved dan pembuatan Activity/Swimlane Diagram dengan lajur Penjual, Sistem, dan Pembeli* | *4* | *On Progress* | *Penyesuaian notasi diagram agar sesuai standar UML dan konsisten dengan alur yang dideskripsikan pada Bab 2* | 
 | *30-08-2026* | *Sulthan Dhiyazka Suwandi* | *Penambahan roadmap pengembangan aplikasi mobile sebagai rencana jangka panjang pada subbab 2.1.2, dengan penegasan bahwa roadmap berada di luar cakupan pengerjaan tugas besar* | *1* | *Done* | *-* | 
-| *30-08-2026* | *Seluruh Anggota* | *Review akhir dokumen: pengecekan konsistensi antarbab, penyeragaman istilah dan penulisan, serta pengisian dokumen Logbook dan Deklarasi Penggunaan AI* | *2* | *On Progress* | *-* | 
+| *30-08-2026* | *Seluruh Anggota* | *Review akhir untuk dokumen draft: pengecekan konsistensi antarbab, penyeragaman istilah dan penulisan, serta pengisian dokumen Logbook dan Deklarasi Penggunaan AI* | *2* | *On Progress* | *-* | 
 
 **Catatan/Evaluasi Milestone 1:**
 * *Pembagian tugas dilakukan per subbab agar setiap anggota memiliki tanggung jawab yang jelas dan dapat ditelusuri: subbab 1.1 dan 1.2 oleh Dhanesworo, subbab 2.1 oleh Sulthan, subbab 2.2 oleh Ghaniyul, subbab 3.1 dan 3.2 oleh Nazhif, serta subbab 3.3 oleh I Made Adi.*
