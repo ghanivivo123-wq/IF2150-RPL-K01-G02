@@ -106,36 +106,41 @@ Marketplace umum unggul dalam kelengkapan fitur, tetapi keunggulan itu dirancang
 
 ## 2.2 Asumsi dan Batasan
 ### 2.2.1 Asumsi dari sisi pengguna
-**Tingkat Kemampuan**
-- Pengguna diasumsikan sudah terbiasa dalam mengoperasikan situs web marketplace standar seperti login menggunakan email, pengisian formuliur dan deskripsi barang, serta proses mengunggah foto/gambar
-- Pengguna diasumsikan terbiasa dan familiar dengan praktek jual beli COD(Cash on Delivery) secara langsung tanpa melalui perantara sistem pembayaran digital seperti Bank atau e money
-**Perangkat dan/atau Infrastruktur Pengguna**
-- Pengguna diasumsikan memiliki perangkat modern seperti handphone, tablet, laptop, dan PC 
-- Pengguna diasumsikan memiliki koneksi internet yang stabil untuk mengakses laman pencarian dan katalog, mengunggah foto produk, dan melakukan komunikasi chat melalui platform
-**Perilaku Pengguna**
-- Pengguna merupakan mahasiswa aktif ITB yang memiliki akun dengan domain @itb.ac.id untuk melakukan proses registrasi, verifikasi, dan login
-- Pengguna memberikan deskripsi dari barang yang valid dan sesuai dengan kondisi yang sebenarnya meliputi kondisi, spesifikasi, harga, dan juga foto
-- Penjual dan pembeli diasumsikan bersedia dan kooperatif dalam menyepakati waktu, lokasi, serta harga dan metode serah terima barang secara COD diluar dari sistem
-- Penjual dan pembeli bertanggung jawab penuh atas proses transaksi yang terjadi secara langsung, karena sistem dan pengembang tidak akan bertanggung jawab
+1. **Tingkat Kemampuan**
+- Pengguna diasumsikan sudah terbiasa dalam mengoperasikan situs web marketplace standar seperti login menggunakan *email*, pengisian formuliur dan deskripsi barang, serta proses mengunggah foto/gambar.
+- Pengguna diasumsikan terbiasa dan familiar dengan praktek jual beli COD(Cash on Delivery) secara langsung tanpa melalui perantara sistem pembayaran digital seperti *Bank* atau *e money*.
+2. **Perangkat dan/atau Infrastruktur Pengguna**
+- Pengguna diasumsikan memiliki perangkat modern seperti handphone, tablet, laptop, dan PC.
+- Pengguna diasumsikan memiliki koneksi internet yang stabil untuk mengakses laman pencarian dan katalog, mengunggah foto produk, dan melakukan komunikasi chat melalui platform.
+3. **Perilaku Pengguna**
+- Pengguna merupakan mahasiswa aktif ITB yang memiliki akun dengan domain @itb.ac.id untuk melakukan proses registrasi, verifikasi, dan *login*.
+- Pengguna memberikan deskripsi dari barang yang valid dan sesuai dengan kondisi yang sebenarnya meliputi kondisi, spesifikasi, harga, dan juga foto.
+- Penjual dan pembeli diasumsikan bersedia dan kooperatif dalam menyepakati waktu, lokasi, serta harga dan metode serah terima barang secara COD diluar dari sistem.
+- Penjual dan pembeli bertanggung jawab penuh atas proses transaksi yang terjadi secara langsung, karena sistem dan pengembang tidak akan bertanggung jawab.
+
 ### 2.2.2 Asumsi dari Sisi Pengerjaan Teknis Perangkat Lunak
-- Media penyimpanan baik *local maupun *cloud diasumsikan memiliki kapasitas yang besar dan mencukupi untuk mendukung semua permintaan dari pengguna 
-- Sistem verifikasi email dengan menggunakan domain @itb.ac.id diasumsikan dapat berjalan dengan baik untuk memastikan bahwa pengguna merupakan mahasiswa aktif ITB
-- Sistem diasumsikan dapat beroperasi dengan kapasitas yang wajar dengab menggunakan satu server tunggal tanpa perlu melakukan konfigurasi yang lebih rumit
-- Proses autentikasi diasumsikan dapat berjalan dengan konsisten dalam memvalidasi token pengguna sehingga risiko pembajakan akun dapat diminimalisir
-- Data kredensial dari pengguna diasumsikan telahy mengalami enkripsi selama proses pengiriman dari pengguna menuju server
+- Media penyimpanan baik *local* maupun *cloud* diasumsikan memiliki kapasitas yang besar dan mencukupi untuk mendukung semua permintaan dari pengguna.
+- Sistem verifikasi email dengan menggunakan domain @itb.ac.id diasumsikan dapat berjalan dengan baik untuk memastikan bahwa pengguna merupakan mahasiswa aktif ITB.
+- Sistem diasumsikan dapat beroperasi dengan kapasitas yang wajar dengab menggunakan satu server tunggal tanpa perlu melakukan konfigurasi yang lebih rumit.
+- Proses autentikasi diasumsikan dapat berjalan dengan konsisten dalam memvalidasi token pengguna sehingga risiko pembajakan akun dapat diminimalisir.
+- Data kredensial dari pengguna diasumsikan telahy mengalami enkripsi selama proses pengiriman dari pengguna menuju server.
+
 ### 2.2.3 Batasan dan Ruang Lingkup
-**Batasan Regulasi/Hukum**
-- Sistem wajib menjaga privasi data pengguna, kredensial akun, dan riwayat komunikasi antar pengguna, agar supaya tidak tersebar ke pihak luar tanpa izin yang sah
-- Peran dari sistem hanya terbatas sebagai penghubung antara penjual dan pembeli (mahasiswa aktif ITB)tanpa memiliki tanggung jawab terhadap keaslian dan kondisi atas barang yang ditawarkan
-**Keteratasan Sumber Daya**
-- Kurangnya anggaran yang diberikan dalam proses pengembangan
-- Durasi pengembangan yang singkat dan kurang *flexible karena ada perkuliahan lain
-- Keterbatasan jumlah anggota dalam proses pengembangan
-**Ruang Lingkup Solusi**
-- Cakupan dalam pengguna sistem ini terbatas hanya pada mahasiswa aktif ITB dengan pembatasan melalui proses verifikasi email berdomain @itb.ac.id
-- Layanan customer service tidak tersedia secara real time 24 jam, melainkan hanya melalui formulir pelaporan atau *report
-- Fitur komunikasi antar pengguna hanya sebatas teks tanpa mendukung komunikasi melalui video maupun panggilan suara
-- Sistem tidak mendukung pembayaran secara  digital maupun sebagai perantara transaksi keuangan. Seluruh proses pembayaran dan serah terima barang sepenuhnya menjadi tanggung jawab pembeli dan penjual
+
+1. **Batasan Regulasi/Hukum**
+- Sistem wajib menjaga privasi data pengguna, kredensial akun, dan riwayat komunikasi antar pengguna, agar supaya tidak tersebar ke pihak luar tanpa izin yang sah.
+- Peran dari sistem hanya terbatas sebagai penghubung antara penjual dan pembeli (mahasiswa aktif ITB)tanpa memiliki tanggung jawab terhadap keaslian dan kondisi atas barang yang ditawarkan.
+
+2. **Keteratasan Sumber Daya**
+- Kurangnya anggaran yang diberikan dalam proses pengembangan.
+- Durasi pengembangan yang singkat dan kurang *flexible karena ada perkuliahan lain.
+- Keterbatasan jumlah anggota dalam proses pengembangan.
+
+3. **Ruang Lingkup Solusi**
+- Cakupan dalam pengguna sistem ini terbatas hanya pada mahasiswa aktif ITB dengan pembatasan melalui proses verifikasi email berdomain @itb.ac.id.
+- Layanan *customer service* tidak tersedia secara *real time* 24 jam, melainkan hanya melalui formulir pelaporan atau *report*.
+- Fitur komunikasi antar pengguna hanya sebatas teks tanpa mendukung komunikasi melalui video maupun panggilan suara.
+- Sistem tidak mendukung pembayaran secara  digital maupun sebagai perantara transaksi keuangan. Seluruh proses pembayaran dan serah terima barang sepenuhnya menjadi tanggung jawab pembeli dan penjual.
 ---
 
 # BAB 3: Spesifikasi Kebutuhan dan Proses Bisnis
