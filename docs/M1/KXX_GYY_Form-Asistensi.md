@@ -18,7 +18,7 @@
 | --- | --- |
 | *13525124* | *Sulthan Dhiyazka Suwandi* |
 | *13525034* | *Dhanesworo Muhammad Datiputro* |
-| *13525115* | *	Nazhif Hilmi Kistijantoro* |
+| *13525115* | *Nazhif Hilmi Kistijantoro* |
 | *13525121* | *I Made Adi Kusuma Ardana* |
 | *13525106* | *Ghaniyul Amri Caulava* |
 
@@ -34,6 +34,7 @@
 | 6. Diagramnya kurang lengkap (belum mencakup semua User Story) dan notasinya harus dibenerin |
 | 7. Lebih baik pusing di awal (deskripsi yang spesifik) daripada pas implementasi banyak spesifikasi yang berubah |
 | 8. Coba lihat repo kelompok MAYOOOR untuk referensi asumsi dan batasan |
+
 **Notes for this section:**  
 *Catatan dapat dituliskan dalam bentuk paragraf atau poin-poin, disesuaikan saja.* 
 
@@ -41,7 +42,7 @@
 
 <!-- ![](./assets/foto-asistensi.jpg) -->
 <p align="center">
-  <img src="./assets/foto-asistensi.jpg" width="100%">
+  <img src="./assets/Foto_Dokumentasi_Asistensi.jpg" width="100%">
 </p>
 
 <p align="center">
