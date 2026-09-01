@@ -38,6 +38,8 @@ Pola konsumsi seperti ini sejalan dengan isu global yang diangkat dalam Sustaina
 
 Urgensi masalah ini terletak pada dua sisi. Di sisi lingkungan, barang yang tidak di-reuse berkontribusi pada limbah dan mendorong produksi barang baru yang tidak perlu. Lalu pada sisi ekonomi mahasiswa, banyak barang bernilai justru dibiarkan menumpuk atau dibuang padahal bisa dijual atau dipakai ulang oleh mahasiswa lain yang justru hanya membutuhkan versi bekas dengan harga yang lebih terjangkau.
 
+**Bukti Permasalahan.** Untuk memastikan masalah ini bukan sekadar asumsi, kami melakukan wawancara singkat secara informal dengan beberapa adik kelas mahasiswa TPB (Tahap Persiapan Bersama) ITB. Dari wawancara tersebut, mereka menyampaikan bahwa kebutuhan seperti buku Mafiki (Matematika, Fisika, Kimia), jas praktikum, dan kalkulator scientific merupakan barang yang wajib dimiliki di awal masa perkuliahan namun harganya baru cukup memberatkan bila dibeli baru. Mereka mengaku berharap dapat memperoleh barang-barang tersebut dalam kondisi bekas layak pakai dengan harga yang lebih murah dari mahasiswa tingkat atas yang sudah tidak memakainya lagi, namun kesulitan menemukan penjual karena tidak ada kanal khusus yang mempertemukan kebutuhan mereka dengan mahasiswa yang ingin melepas barang tersebut. Temuan ini menguatkan bahwa kebutuhan akan platform preloved yang terpusat dan dikhususkan untuk lingkungan ITB memang dirasakan langsung oleh calon pengguna, bukan hanya berdasarkan observasi tim.
+
 ## 1.2 Analisis Kondisi Saat Ini
 Saat ini, transaksi jual beli barang preloved di kalangan mahasiswa ITB umumnya berlangsung secara informal melalui grup WhatsApp atau Line per angkatan atau himpunan, story Instagram pribadi, atau marketplace umum yang tidak dikhususkan untuk lingkungan ITB.
 
@@ -149,3 +151,6 @@ Definisikan apa yang ingin dicapai oleh pengguna saat menggunakan sistem ini dal
 
 # Referensi
 - Diagram UML: https://www.drawio.com/, https://staruml.io/
+- Data timbulan sampah tekstil (2,6%) dan sampah kertas/karton (10,7%) nasional: Sistem Informasi Pengelolaan Sampah Nasional (SIPSN), Kementerian Lingkungan Hidup dan Kehutanan (KLHK) - https://sipsn.menlhk.go.id/sipsn/public/data/timbulan
+- SDG 12.5 (Responsible Consumption and Production - reduce waste generation through prevention, reduction, recycling and reuse): United Nations, Sustainable Development Goals - https://sdgs.un.org/goals/goal12
+- Bukti permasalahan: hasil wawancara informal tim dengan mahasiswa TPB (Tahap Persiapan Bersama) ITB mengenai kebutuhan buku Mafiki, jas praktikum, dan kalkulator scientific, dilakukan pada tahap analisis awal tugas besar ini.
