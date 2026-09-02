@@ -168,7 +168,21 @@ Definisikan apa yang ingin dicapai oleh pengguna saat menggunakan sistem ini dal
 | US-07 | Admin | Melihat laporan masalah dari pengguna | Menjaga kualitas dan keamanan platform |
 | US-08 | Admin | Memblokir atau menghapus listing dan akun yang dilaporkan bermasalah | Menjaga kualitas dan keamanan platform |
 
-## 3.3 Model Proses Bisnis
+
+## 3.3 Deskripsi Aktivitas
+
+| ID | Aktivitas | Penjelasan | ID User Story |
+| :--- | :--- | :--- | :--- |
+| A01 | Mendaftar atau login menggunakan akun ITB | Pelanggan dan pembeli hanya bisa menggunakan akun dengan domain itb.ac.id | US-01 |
+| A02 | Membuat listing barang yang ingin dijual | Penjual membuat listing barang yang nantinya akan ditunjukkan oleh sistem kepada calon pembeli | US-02|
+| A03 | Mencari barang yang diinginkan berdasarkan nama, harga, kategori, dan sebagainya | Pembeli mencari barang berdasarkan kategori yang diinginkan dan sistem akan menunjukkan sesuai yang diminta | US-03 |
+| A04 | Komunikasi antara penjual dan pembeli | Pembeli dan penjual melakukan negosiasi dalam chat sebelum melakukan COD barang yang diinginkan | US-04 |
+| A05 | Sistem komunikasi yang aman antara penjual dan pembeli yang tidak bisa dilihat oleh admin | Menjaga privasi dari komunikasi antara penjual dan pembeli | US-05 |
+| A06 | Menandai barang sudah terjual | Sistem tidak akan menampilkan kembali list barang yang sudah dilabeli terjual sehingga menghindari kesalahpahaman | US-06 |
+| A07 | Melihat laporan masalah dari pengguna | Admin menerima laporan masalah dari pengguna untuk menjaga kualitas dari platform | US-07 |
+| A08 | Memblokir atau menghapus listing barang dan akun yang dilaporkan masalah | Admin dapat melakukan pemblokiran setelah menerima laporan dan telah memverifikasinya | US-08 |
+
+## 3.4 Model Proses Bisnis
 
 <p align="center">
 <img src="https://uml.planttext.com/plantuml/png/XLF9JkH03BtdAomEA3aWa9YP0no6xJ8715BtV82RE1sJgagf5X1IV_pObKu0GMikYLBsM-hPkOe9GyhMLBj7iXio3FKzzXWvlYByMTyqkwgqL1Vtv9umC6mmeDj2_NTrSdRUN5RLRiKnaTsL5hIUpO0EbCE0dq3oRQI91JV15NPGK7Wi6-vdgLRWbcmsoF3KOvgqVtpHff2ZIdkAydnXX5YgC8msEnv41DWb2WxDnF6pcOouvwn7tnWHKhQufzmRsQ31M9pyxne6XwoE76t7oAhVOzXY8H9ZNkvo-t0dBDn1VUrnm1vMfEzI-Dr0wib1lUOMXxdIL00QqGOJbgY3XkpKP762xb8wOXfzHIOIr1zmXzqAvmq5CPLXoUCnZ94YF7ITOKUdugXHweddG6R5svAQc7pJ8SAn1EVUA62lZkST-YnGo1MznK6FzzFp1bCt1ZjNqRMuhE7HAhSIsfg2sZcQnlfhiJclnvIOfo2mp18EfXpddLnaU_JlfpAam5_MEDjit-DrBNVLbRpq3_e7" alt="Activity Diagram Proses Bisnis" width="600">
