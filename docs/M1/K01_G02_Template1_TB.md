@@ -9,7 +9,7 @@ TOPIC BRAINSTORMING
 
 ## *ITBELI*
 
-### Untuk: *Kak Mikha*
+### Untuk: *Mikhael Andrian Yonatan*
 
 Dipersiapkan oleh:
 | Informasi | Keterangan |
@@ -23,7 +23,7 @@ Dipersiapkan oleh:
 | *13525034* | *Dhanesworo Muhammad Datiputro* |
 | *13525115* | *Nazhif Hilmi Kistijantoro* |
 | *13525121* | *I Made Adi Kusuma Ardana* |
-| *13525106* | *Ghaniyul AMri Caulava* |
+| *13525106* | *Ghaniyul Amri Caulava* |
 ---
 
 <br>
