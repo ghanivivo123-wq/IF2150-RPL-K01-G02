@@ -4,13 +4,13 @@
 
 | Informasi | Keterangan |
 | --- | --- |
-| **Hari** | *\[Hari\]* |
-| **Tanggal** | *\[DD/MM/YYYY\]* |
-| **Kelas** | *\[Kelas\]* |
-| **Nomor Kelompok** | *\[Nomor Kelompok\]*  |
-| **Nama Kelompok** | *\[Nama Kelompok\]*  |
-| **Nama Perangkat Lunak** | *\[Nama P/L\]*  |
-| **Dokumen** | *\[Nama Dokumen yang diasistensikan\]*  |
+| **Hari** | Senin |
+| **Tanggal** | 07/09/2026 |
+| **Kelas** | K01 |
+| **Nomor Kelompok** | G02  |
+| **Nama Kelompok** | Indeks A  |
+| **Nama Perangkat Lunak** | ITBELI  |
+| **Dokumen** | K01_G02_RG.md  |
 
 ### Anggota Kelompok
 
@@ -26,10 +26,16 @@
 
 | Catatan |
 | --- |
-| 1. *\[Berikan catatan hasil asistensi\]*  |
-| 2. ... |
-| 3. ... |
-| 4. ... |
+| 1. Deskripsi umumnya udah ada solusi, ekspektasi,  alur kerja solusi, dan harapan dari solusinya, jadi udah aman.  |
+| 2. Notes: User story itu seharusnya dilakuin saat wawancara, dan satu user story itu bisa mencakup banyak aktivitas. Tapi untuk tubes karena memang rekayasa jadi gapapa dulu. |
+| 3. Notes: harus bisa bedain tujuan, aktivitas/task, action. Task adalah sesuatu yang masih bisa didekomposisi. Action adalah dekomposisi2 dari task tersebut. |
+| 4. Untuk bagian aktivitas, bagian mendaftar atau login harus dijadiin hal yang terpisah, karena mendaftar dan login itu dua hal yang berbeda. Selain itu, menerima pembayaran dan barang itu juga dua hal yang terpisah. Satu aktivitas itu membicarakan satu hal yang spesifik. |
+| 5. Bagian aktivitas memakai kata kerja aktif. |
+| 6. User story 04 dan 05 bisa digabungin. |
+| 7. Untuk KF, itu jadi dibuat berdasarkan bagian sebelumnya (2.3) yang P/L-nya iya, terus ditulis kayak system requirement, tapi lebih general. |
+| 8. Buat semua kebutuhan, ditulis dengan format EARS. |
+| 9. Kebutuhan non fungsional secara garis besar sudah benar tapi pastikan terukur. Ikuti format EARS. |
+| 10. Untuk bagian pemetaan kebutuhan, P/L untuk R05 itu tidak. Sisanya harus ditinjau ulang lagi nunggu konfirmasi dari asisten. |
 
 **Notes for this section:**  
 *Catatan dapat dituliskan dalam bentuk paragraf atau poin-poin, disesuaikan saja.* 
