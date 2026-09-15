@@ -5,7 +5,7 @@
 | Informasi | Keterangan |
 | --- | --- |
 | **Hari** | Senin |
-| **Tanggal** | 15/09/2026 |
+| **Tanggal** | 14/09/2026 |
 | **Kelas** | K01 |
 | **Nomor Kelompok** | G02  |
 | **Nama Kelompok** | Indeks A  |
@@ -42,7 +42,7 @@
 
 <!-- ![](./assets/foto-asistensi.jpg) -->
 <p align="center">
-  <img src="./assets/foto-asistensi.jpg" width="100%">
+  <img src="./assets/bukti-asistensi-m3.png" width="100%">
 </p>
 
 <p align="center">
