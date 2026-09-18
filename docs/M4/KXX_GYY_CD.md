@@ -806,13 +806,28 @@ Buat diagram kelas untuk setiap use case pada 3.2.
 
 #### Identifikasi Kelas
 
-| ID Kelas | Nama Kelas | Deskripsi Kelas |
-| :--- | :--- | :--- |
-| *C01* | *Pelanggan* | *Menyimpan data akun pelanggan yang membuat pesanan.* |
-| *C02* | *Pesanan* | *Menyimpan data pesanan yang dibuat dari isi keranjang.* |
-| *C03* | *Keranjang* | *Menyimpan sementara item yang dipilih sebelum checkout.* |
-| *...* | *...* | *...* |
+## 4.1 Identifikasi Kelas
 
+Identifikasi seluruh kelas yang diperlukan berdasarkan use case dan skenarionya. Satu kelas boleh terkait dengan lebih dari satu use case.
+
+| ID Kelas | Nama Kelas | Deskripsi Kelas | ID Use Case |
+| :--- | :--- | :--- | :--- |
+| *C01* | *Pembeli* | *Menyimpan data identitas pengguna saat bertindak sebagai pencari barang (Nama, NIM, Email, Kata Sandi, Status). Memiliki operasi untuk menelusuri katalog, memfilter barang, membuat laporan, dan menghubungi penjual. (Keterangan: Akun pembeli juga dapat berperan sebagai penjual, begitu juga sebaliknya).* | *UC01, UC03, UC05, UC13, UC14, UC15, UC16, UC19* |
+| *C02* | *Penjual* | *Menyimpan data identitas pengguna saat bertindak sebagai penawar barang (Nama, NIM, Email, Kata Sandi, Status). Kelas ini berelasi langsung dengan daftar barangnya dan memiliki operasi untuk menambah, mengubah, menghapus, atau menandai barang laku. (Keterangan: Akun penjual juga dapat berperan sebagai pembeli, begitu juga sebaliknya).* | *UC01, UC03, UC05, UC07, UC08, UC09, UC10, UC11, UC12, UC16* |
+| *C03* | *Admin* | *Menyimpan data pengelola dengan hak akses tinggi. Kelas ini memiliki operasi untuk meninjau laporan, memblokir akun pengguna bermasalah, dan menghapus barang yang tidak sesuai ketentuan.* | *UC03, UC20, UC21, UC22, UC23, UC24* |
+| *C04* | *SesiOtentikasi* | *Mengelola keamanan akses (login/logout). Kelas ini memvalidasi token sesi (JWT), mengelola batas waktu sesi (maks 24 jam), serta memverifikasi kode OTP saat pendaftaran (batas waktu 15 menit).* | *UC01, UC02, UC03, UC04* |
+| *C05* | *ListingBarang* | *Menyimpan data utama barang dagangan. Memuat atribut lengkap seperti judul, harga, deskripsi, dan status ketersediaan (Tersedia/Terjual). Kelas ini dimiliki oleh Penjual.* | *UC05, UC07, UC08, UC09, UC10, UC11, UC12, UC13, UC14, UC15, UC16, UC22, UC23, UC24* |
+| *C06* | *FotoListing* | *Mengelola aset visual dari sebuah barang. Kelas ini memastikan validasi ketat: format hanya JPG/PNG, ukuran maksimal 5 MB per berkas, dan membatasi relasi maksimal 5 foto per barang.* | *UC07, UC09, UC15* |
+| *C07* | *Kategori* | *Menyediakan data rujukan pilihan kategori barang. Memastikan klasifikasi saat membuat barang baru atau memfilter pencarian katalog hanya berasal dari daftar yang sudah distandarisasi sistem.* | *UC07, UC09, UC13, UC14* |
+| *C08* | *LokasiCOD* | *Menyediakan rujukan titik temu fisik yang mencakup sistem multikampus (misal: Kampus Ganesha, Jatinangor, dan Cirebon). Memastikan penjual dan pembeli sepakat pada titik serah terima yang aman dan terspesifikasi berdasarkan wilayah kampus.* | *UC07, UC09, UC14* |
+| *C09* | *FilterPencarian* | *Memproses fitur pencarian barang di katalog. Kelas ini menggabungkan kata kunci, filter kategori, dan rentang harga (memastikan harga minimum tidak melebihi maksimum), serta mengatur tampilan hasil sebanyak 20 barang per halaman.* | *UC13, UC14* |
+| *C10* | *RuangPercakapan* | *Menyimpan metadata ruang obrolan. Berfungsi sebagai penghubung eksklusif antara satu Pembeli, satu Penjual, dan satu ListingBarang agar percakapan tidak berbayang atau terduplikasi.* | *UC16, UC17, UC18* |
+| *C11* | *Pesan* | *Menyimpan riwayat teks obrolan di dalam ruang percakapan. Mencatat isi teks terenkripsi, waktu pengiriman, identitas pengirim, menolak masukan kosong, dan mengelola status pesan belum dibaca.* | *UC16, UC17, UC18* |
+| *C12* | *Notifikasi* | *Menyimpan riwayat pemberitahuan in-app pengguna. Mencatat isi pesan peringatan, waktu, dan status baca (read/unread) saat ada obrolan baru atau tindakan intervensi dari admin.* | *UC02, UC17, UC22, UC23* |
+| *C13* | *Laporan* | *Menyimpan aduan dari pengguna. Memuat atribut jenis pelanggaran (Penipuan, Konten, Bug), teks alasan, serta status penyelesaian (Baru, Diproses, Selesai). Kelas ini ditangani langsung oleh Admin.* | *UC15, UC19, UC20, UC21, UC22, UC23* |
+| *C14* | *BuktiLaporan* | *Mengelola aset lampiran untuk pelaporan. Memvalidasi bahwa tangkapan layar (screenshot) bersifat wajib diunggah sebelum entitas Laporan bisa disimpan ke dalam pangkalan data.* | *UC19* |
+| *C15* | *LogAudit* | *Menyimpan rekam jejak aktivitas Admin. Berisi riwayat permanen (waktu, identitas admin, tindakan spesifik) yang tidak bisa dihapus atau dimanipulasi guna menjaga keamanan dan transparansi sistem.* | *UC19, UC21, UC22, UC23, UC24* |
+| *C16* | *DokumenLegal* | *Mengelola teks aturan sistem seperti Kebijakan Privasi dan Ketentuan Penggunaan. Memastikan klausa terkait keamanan (seperti enkripsi privasi pesan) tersedia untuk dibaca kapan saja oleh pengguna.* | *UC05, UC06, UC16* |
 #### Diagram Kelas
 
 <p align="center">
