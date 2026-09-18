@@ -181,7 +181,7 @@ Buatlah diagram use case keseluruhan berdasarkan identifikasi use case beserta a
 Pada bagian ini, Anda diperbolehkan untuk menyalin dari dokumen sebelumnya.
 
 <p align="center">
-<img alt="Use Case Diagram" src="./assets/diagram/Diagram_UseCase_M3.jpg" width="100%">
+<img alt="Use Case Diagram" src="./assets/diagram/Diagram_UseCase_M4.jpg" width="100%">
 </p>
 <p align="center">
 <i>Gambar 1. Use Case Diagram</i>
