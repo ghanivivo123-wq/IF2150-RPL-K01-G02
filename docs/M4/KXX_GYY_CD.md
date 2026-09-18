@@ -782,31 +782,6 @@ Pada bagian ini, Anda diperbolehkan untuk menyalin dari dokumen sebelumnya.
 Bagian ini berisi identifikasi kelas dan pemodelan struktur kelas yang diperlukan untuk merealisasikan use case pada BAB 3. Gunakan skenario use case (3.4) sebagai dasar untuk menentukan kelas, atribut, metode, dan hubungan antarkelas.
 
 ## 4.1 Identifikasi Kelas
-Identifikasi seluruh kelas yang diperlukan berdasarkan use case dan skenarionya. Satu kelas boleh terkait dengan lebih dari satu use case.
-
-| ID Kelas | Nama Kelas | Deskripsi Kelas | ID Use Case |
-| :--- | :--- | :--- | :--- |
-| *C01* | *Pelanggan* | *Menyimpan data akun pelanggan yang membuat pesanan.* | *UC01, UC05* |
-| *C02* | *Pesanan* | *Menyimpan data pesanan beserta status pembayarannya.* | *UC01, UC03, UC05* |
-| *C03* | *Keranjang* | *Menyimpan sementara item yang dipilih sebelum checkout.* | *UC01, UC02* |
-| *C04* | *MetodePembayaran* | *Kelas abstrak yang merepresentasikan metode pembayaran yang dipilih pelanggan.* | *UC03, UC04* |
-| *C05* | *Kartu* | *Merealisasikan pembayaran melalui kartu kredit/debit dengan mengirimkan permintaan ke payment gateway (dummy).* | *UC03, UC04* |
-| *C06* | *EWallet* | *Merealisasikan pembayaran melalui e-wallet, termasuk pengecekan saldo, dengan mengirimkan permintaan ke payment gateway (dummy).* | *UC03, UC04* |
-| *C07* | *RiwayatTransaksi* | *Menyimpan catatan transaksi beserta status yang dikembalikan payment gateway (dummy).* | *UC03, UC05* |
-| *...* | *...* | *...* | *...* |
-
-Pastikan setiap kelas memiliki tanggung jawab yang jelas dan memang diperlukan untuk merealisasikan fungsi yang dimodelkan. Hindari kelas yang tidak memiliki keterkaitan dengan KF atau use case manapun.
-
-## 4.2 Diagram Kelas per Use Case
-Buat diagram kelas untuk setiap use case pada 3.2.
-
-### 4.2.1 Use Case UC01
-
-**Nama Use Case:** *Memesan Produk*
-
-#### Identifikasi Kelas
-
-## 4.1 Identifikasi Kelas
 
 Identifikasi seluruh kelas yang diperlukan berdasarkan use case dan skenarionya. Satu kelas boleh terkait dengan lebih dari satu use case.
 
@@ -828,6 +803,25 @@ Identifikasi seluruh kelas yang diperlukan berdasarkan use case dan skenarionya.
 | *C14* | *BuktiLaporan* | *Mengelola aset lampiran untuk pelaporan. Memvalidasi bahwa tangkapan layar (screenshot) bersifat wajib diunggah sebelum entitas Laporan bisa disimpan ke dalam pangkalan data.* | *UC19* |
 | *C15* | *LogAudit* | *Menyimpan rekam jejak aktivitas Admin. Berisi riwayat permanen (waktu, identitas admin, tindakan spesifik) yang tidak bisa dihapus atau dimanipulasi guna menjaga keamanan dan transparansi sistem.* | *UC19, UC21, UC22, UC23, UC24* |
 | *C16* | *DokumenLegal* | *Mengelola teks aturan sistem seperti Kebijakan Privasi dan Ketentuan Penggunaan. Memastikan klausa terkait keamanan (seperti enkripsi privasi pesan) tersedia untuk dibaca kapan saja oleh pengguna.* | *UC05, UC06, UC16* |
+
+Pastikan setiap kelas memiliki tanggung jawab yang jelas dan memang diperlukan untuk merealisasikan fungsi yang dimodelkan. Hindari kelas yang tidak memiliki keterkaitan dengan KF atau use case manapun.
+
+## 4.2 Diagram Kelas per Use Case
+Buat diagram kelas untuk setiap use case pada 3.2.
+
+### 4.2.1 Use Case UC01
+
+**Nama Use Case:** *Memesan Produk*
+
+#### Identifikasi Kelas
+
+| ID Kelas | Nama Kelas | Deskripsi Kelas |
+| :--- | :--- | :--- |
+| *C01* | *Pelanggan* | *Menyimpan data akun pelanggan yang membuat pesanan.* |
+| *C02* | *Pesanan* | *Menyimpan data pesanan yang dibuat dari isi keranjang.* |
+| *C03* | *Keranjang* | *Menyimpan sementara item yang dipilih sebelum checkout.* |
+| *...* | *...* | *...* |
+
 #### Diagram Kelas
 
 <p align="center">
