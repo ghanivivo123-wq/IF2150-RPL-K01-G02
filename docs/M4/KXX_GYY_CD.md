@@ -7,23 +7,23 @@ CLASS DIAGRAM
 </h1>
 <br>
 
-## *Nama Perangkat Lunak*
+## *ITBELI*
 
-### Untuk: *[Nama Asisten]*
+### Untuk: *Mikhael Andrian Yonatan*
 
 Dipersiapkan oleh:
 | Informasi | Keterangan |
 | --- | --- |
-| Kelas | *\[Kelas\]* |
-| Kelompok | *\[Nomor Kelompok\]*  |
+| Kelas | *K1* |
+| Kelompok | *2*  |
 
 | NIM | Nama |
 |---|---|
-| *[NIM 1]* | *[Nama Anggota 1]* |
-| *[NIM 2]* | *[Nama Anggota 2]* |
-| *[NIM 3]* | *[Nama Anggota 3]* |
-| *[NIM 4]* | *[Nama Anggota 4]* |
-| *[NIM 5]* | *[Nama Anggota 5]* |
+| *13525124* | *Sulthan Dhiyazka Suwandi* |
+| *13525034* | *Dhanesworo Muhammad Datiputro* |
+| *13525115* | *Nazhif Hilmi Kistijantoro* |
+| *13525121* | *I Made Adi Kusuma Ardana* |
+| *13525106* | *Ghaniyul Amri Caulava* |
 ---
 
 ## Daftar Perubahan
