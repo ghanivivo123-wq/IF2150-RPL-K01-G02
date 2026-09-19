@@ -811,34 +811,245 @@ Buat diagram kelas untuk setiap use case pada 3.2.
 
 ### 4.2.1 Use Case UC01
 
-**Nama Use Case:** *Memesan Produk*
+**Nama Use Case:** *Mendaftar Akun*
 
 #### Identifikasi Kelas
 
 | ID Kelas | Nama Kelas | Deskripsi Kelas |
 | :--- | :--- | :--- |
-| *C01* | *Pelanggan* | *Menyimpan data akun pelanggan yang membuat pesanan.* |
-| *C02* | *Pesanan* | *Menyimpan data pesanan yang dibuat dari isi keranjang.* |
-| *C03* | *Keranjang* | *Menyimpan sementara item yang dipilih sebelum checkout.* |
-| *...* | *...* | *...* |
+| *C01* | *Pembeli* | *Menyimpan data identitas calon pengguna yang mendaftar sebagai pencari barang (Nama, NIM, Email, Kata Sandi, Status Akun awal "Belum Terverifikasi").* |
+| *C02* | *Penjual* | *Menyimpan data identitas calon pengguna yang mendaftar sebagai penawar barang (Nama, NIM, Email, Kata Sandi, Status Akun awal "Belum Terverifikasi").* |
+| *C04* | *SesiOtentikasi* | *Melakukan hashing kata sandi (bcrypt), memvalidasi domain dan keunikan email, serta membangkitkan kode verifikasi (OTP) berbatas waktu 15 menit untuk akun yang baru dibuat.* |
+| *C12* | *Notifikasi* | *Mengirimkan kode verifikasi yang telah dibangkitkan ke alamat email pendaftar.* |
+| *C16* | *DokumenLegal* | *Menyediakan tautan dan isi Kebijakan Privasi serta Ketentuan Penggunaan yang wajib disetujui pendaftar sebelum akun dibuat.* |
 
 #### Diagram Kelas
 
 <p align="center">
-<img alt="Class Diagram UC01" src="./assets/diagram/contoh-class-diagram.webp" width="70%">
+<img alt="Class Diagram UC01" src="./assets/diagram/Diagram_Kelas_UC01.jpg" width="70%">
 </p>
 <p align="center">
 <i>Gambar 2. Diagram Kelas Use Case UC01</i>
 </p>
 <br>
 
-Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi milik setiap kelas dapat dituliskan pada tabel di bawah ini. Pastikan hubungan antarkelas menggunakan jenis relasi yang sesuai (asosiasi, agregasi, komposisi, generalisasi, atau dependensi).
+| ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
+| :--- | :--- | :--- | :--- |
+| *C01* | *Pembeli* | *idPengguna, nama, nim, email, kataSandiHash, statusAkun, setujuKebijakan* | *daftarAkun(), validasiKelengkapanFormulir(), validasiDomainEmail(), cekKeunikanEmail(), setujuiKebijakan()* |
+| *C02* | *Penjual* | *idPengguna, nama, nim, email, kataSandiHash, statusAkun, setujuKebijakan* | *daftarAkun(), validasiKelengkapanFormulir(), validasiDomainEmail(), cekKeunikanEmail(), setujuiKebijakan()* |
+| *C04* | *SesiOtentikasi* | *idSesi, idPengguna, kodeVerifikasi, waktuBuatKode, batasWaktuKode* | *hashKataSandi(), buatKodeVerifikasi(), kirimKodeVerifikasi()* |
+| *C12* | *Notifikasi* | *idNotifikasi, idPenerima, jenis, isi, waktuKirim, statusBaca* | *kirimEmailVerifikasi()* |
+| *C16* | *DokumenLegal* | *idDokumen, jenisDokumen, isi, versi, tanggalBerlaku* | *tampilkanTautan(), tampilkanDokumen()* |
+
+### 4.2.2 Use Case UC02
+
+**Nama Use Case:** *Memverifikasi Surel*
+
+#### Identifikasi Kelas
+
+| ID Kelas | Nama Kelas | Deskripsi Kelas |
+| :--- | :--- | :--- |
+| *C01* | *Pembeli* | *Menyimpan status akun pengguna yang akan diperbarui dari "Belum Terverifikasi" menjadi "Terverifikasi" setelah kode valid.* |
+| *C02* | *Penjual* | *Menyimpan status akun pengguna yang akan diperbarui dari "Belum Terverifikasi" menjadi "Terverifikasi" setelah kode valid.* |
+| *C04* | *SesiOtentikasi* | *Mencocokkan kode verifikasi yang dimasukkan dengan kode tersimpan, memeriksa masa berlaku 15 menit, serta menghanguskan kode lama dan membangkitkan kode baru saat pengguna meminta pengiriman ulang.* |
+| *C12* | *Notifikasi* | *Mengirimkan kode verifikasi baru ke email pengguna saat pengiriman ulang diminta, serta menampilkan notifikasi keberhasilan verifikasi.* |
+
+#### Diagram Kelas
+
+<p align="center">
+<img alt="Class Diagram UC02" src="./assets/diagram/Diagram_Kelas_UC02.jpg" width="70%">
+</p>
+<p align="center">
+<i>Gambar 3. Diagram Kelas Use Case UC02</i>
+</p>
+<br>
 
 | ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
 | :--- | :--- | :--- | :--- |
-| *C02* | *Pesanan* | *idPesanan, total, status* | *buatPesanan(), hitungTotal()* |
-| *C03* | *Keranjang* | *daftarItem* | *tambahItem(), checkout()* |
-| *...* | *...* | *...* | *...* |
+| *C01* | *Pembeli* | *idPengguna, email, statusAkun* | *verifikasiAkun(), perbaruiStatusAkun(), mintaKirimUlangKode()* |
+| *C02* | *Penjual* | *idPengguna, email, statusAkun* | *verifikasiAkun(), perbaruiStatusAkun(), mintaKirimUlangKode()* |
+| *C04* | *SesiOtentikasi* | *idSesi, idPengguna, kodeVerifikasi, waktuBuatKode, batasWaktuKode, statusKode* | *validasiKodeVerifikasi(), cekKedaluwarsaKode(), hanguskanKodeLama(), buatKodeVerifikasi(), kirimUlangKode()* |
+| *C12* | *Notifikasi* | *idNotifikasi, idPenerima, jenis, isi, waktuKirim, statusBaca* | *kirimEmailVerifikasi(), tampilkanNotifikasi()* |
+
+### 4.2.3 Use Case UC03
+
+**Nama Use Case:** *Masuk ke Sistem (Login)*
+
+#### Identifikasi Kelas
+
+| ID Kelas | Nama Kelas | Deskripsi Kelas |
+| :--- | :--- | :--- |
+| *C01* | *Pembeli* | *Menyimpan kredensial (email, hash kata sandi) dan status akun (terverifikasi/diblokir) yang diperiksa saat proses login.* |
+| *C02* | *Penjual* | *Menyimpan kredensial (email, hash kata sandi) dan status akun (terverifikasi/diblokir) yang diperiksa saat proses login.* |
+| *C03* | *Admin* | *Menyimpan kredensial pengelola dengan hak akses tinggi yang dapat masuk ke sistem melalui halaman login yang sama.* |
+| *C04* | *SesiOtentikasi* | *Mencari akun berdasarkan email, membandingkan hash kata sandi, memeriksa status akun, dan membangkitkan token sesi (JWT) bermasa berlaku paling lama 24 jam.* |
+
+#### Diagram Kelas
+
+<p align="center">
+<img alt="Class Diagram UC03" src="./assets/diagram/Diagram_Kelas_UC03.jpg" width="70%">
+</p>
+<p align="center">
+<i>Gambar 4. Diagram Kelas Use Case UC03</i>
+</p>
+<br>
+
+| ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
+| :--- | :--- | :--- | :--- |
+| *C01* | *Pembeli* | *idPengguna, email, kataSandiHash, statusAkun, statusBlokir* | *login(), getStatusAkun()* |
+| *C02* | *Penjual* | *idPengguna, email, kataSandiHash, statusAkun, statusBlokir* | *login(), getStatusAkun()* |
+| *C03* | *Admin* | *idAdmin, nama, email, kataSandiHash* | *login()* |
+| *C04* | *SesiOtentikasi* | *idSesi, idPengguna, peran, token, waktuMulai, waktuKedaluwarsa* | *cariAkunByEmail(), verifikasiKataSandi(), cekStatusAkun(), buatTokenSesi(), tolakLogin()* |
+
+### 4.2.4 Use Case UC04
+
+**Nama Use Case:** *Keluar dari Sistem (Logout)*
+
+#### Identifikasi Kelas
+
+| ID Kelas | Nama Kelas | Deskripsi Kelas |
+| :--- | :--- | :--- |
+| *C01* | *Pembeli* | *Pengguna yang sedang masuk dan memilih fungsi keluar dari sistem.* |
+| *C02* | *Penjual* | *Pengguna yang sedang masuk dan memilih fungsi keluar dari sistem.* |
+| *C03* | *Admin* | *Pengelola yang sedang masuk dan memilih fungsi keluar dari sistem.* |
+| *C04* | *SesiOtentikasi* | *Mencabut (revoke) token sesi yang sedang aktif dari sisi klien maupun server sehingga sesi login berakhir.* |
+
+#### Diagram Kelas
+
+<p align="center">
+<img alt="Class Diagram UC04" src="./assets/diagram/Diagram_Kelas_UC04.jpg" width="70%">
+</p>
+<p align="center">
+<i>Gambar 5. Diagram Kelas Use Case UC04</i>
+</p>
+<br>
+
+| ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
+| :--- | :--- | :--- | :--- |
+| *C01* | *Pembeli* | *idPengguna* | *logout()* |
+| *C02* | *Penjual* | *idPengguna* | *logout()* |
+| *C03* | *Admin* | *idAdmin* | *logout()* |
+| *C04* | *SesiOtentikasi* | *idSesi, idPengguna, token, statusSesi* | *cabutToken(), hapusSesi(), alihkanKeHalamanLogin()* |
+
+### 4.2.5 Use Case UC05
+
+**Nama Use Case:** *Melihat Profil Akun*
+
+#### Identifikasi Kelas
+
+| ID Kelas | Nama Kelas | Deskripsi Kelas |
+| :--- | :--- | :--- |
+| *C01* | *Pembeli* | *Menyimpan data identitas (Nama, NIM, Email) yang ditampilkan pada halaman profil pengguna.* |
+| *C02* | *Penjual* | *Menyimpan data identitas (Nama, NIM, Email) yang ditampilkan pada halaman profil beserta relasi ke daftar listing miliknya.* |
+| *C04* | *SesiOtentikasi* | *Mengidentifikasi ID pengguna dari token sesi yang sedang aktif sebelum data profil diambil.* |
+| *C05* | *ListingBarang* | *Menyediakan daftar listing yang berelasi dengan ID pengguna untuk ditampilkan pada halaman profil.* |
+| *C16* | *DokumenLegal* | *Menyediakan tautan Kebijakan Privasi yang dapat diakses dari menu Pengaturan Akun.* |
+
+#### Diagram Kelas
+
+<p align="center">
+<img alt="Class Diagram UC05" src="./assets/diagram/Diagram_Kelas_UC05.jpg" width="70%">
+</p>
+<p align="center">
+<i>Gambar 6. Diagram Kelas Use Case UC05</i>
+</p>
+<br>
+
+| ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
+| :--- | :--- | :--- | :--- |
+| *C01* | *Pembeli* | *idPengguna, nama, nim, email* | *lihatProfil(), bukaPengaturanAkun()* |
+| *C02* | *Penjual* | *idPengguna, nama, nim, email* | *lihatProfil(), bukaPengaturanAkun(), getDaftarListing()* |
+| *C04* | *SesiOtentikasi* | *idSesi, idPengguna, token* | *getIdPenggunaDariToken()* |
+| *C05* | *ListingBarang* | *idListing, idPenjual, judul, harga, status* | *getListingByPengguna()* |
+| *C16* | *DokumenLegal* | *idDokumen, jenisDokumen, isi* | *tampilkanTautan()* |
+
+### 4.2.6 Use Case UC06
+
+**Nama Use Case:** *Melihat Kebijakan Privasi dan Ketentuan Penggunaan*
+
+#### Identifikasi Kelas
+
+| ID Kelas | Nama Kelas | Deskripsi Kelas |
+| :--- | :--- | :--- |
+| *C01* | *Pembeli* | *Pengguna yang membuka tautan Kebijakan Privasi / Ketentuan Penggunaan dari halaman pendaftaran, pengaturan akun, atau ruang percakapan.* |
+| *C02* | *Penjual* | *Pengguna yang membuka tautan Kebijakan Privasi / Ketentuan Penggunaan dari halaman pendaftaran, pengaturan akun, atau ruang percakapan.* |
+| *C16* | *DokumenLegal* | *Mengelola naskah statis Kebijakan Privasi dan Ketentuan Penggunaan, termasuk klausa yang menyatakan bahwa isi percakapan pribadi terenkripsi dan tidak dapat diakses oleh admin maupun pengembang.* |
+
+#### Diagram Kelas
+
+<p align="center">
+<img alt="Class Diagram UC06" src="./assets/diagram/Diagram_Kelas_UC06.jpg" width="70%">
+</p>
+<p align="center">
+<i>Gambar 7. Diagram Kelas Use Case UC06</i>
+</p>
+<br>
+
+| ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
+| :--- | :--- | :--- | :--- |
+| *C01* | *Pembeli* | *idPengguna* | *bukaDokumenLegal()* |
+| *C02* | *Penjual* | *idPengguna* | *bukaDokumenLegal()* |
+| *C16* | *DokumenLegal* | *idDokumen, jenisDokumen, judul, isi, klausaPrivasiPesan, versi, tanggalBerlaku* | *ambilDokumen(), tampilkanDokumen(), tampilkanKlausaPrivasi()* |
+
+### 4.2.7 Use Case UC07
+
+**Nama Use Case:** *Membuat Listing*
+
+#### Identifikasi Kelas
+
+| ID Kelas | Nama Kelas | Deskripsi Kelas |
+| :--- | :--- | :--- |
+| *C02* | *Penjual* | *Pengguna pemilik listing yang mengisi formulir pembuatan listing dan menekan tombol simpan.* |
+| *C05* | *ListingBarang* | *Menyimpan data utama listing (judul, harga, deskripsi kondisi, kategori, lokasi COD) dengan status awal "Tersedia" dan menerbitkannya ke katalog utama.* |
+| *C06* | *FotoListing* | *Menyimpan berkas foto listing dan memvalidasi format (JPG/PNG), ukuran (maks 5 MB), dan jumlah (maks 5 foto per listing).* |
+| *C07* | *Kategori* | *Menyediakan daftar kategori tetap sebagai satu-satunya pilihan kategori pada formulir listing.* |
+| *C08* | *LokasiCOD* | *Menyediakan daftar rujukan titik temu COD berbasis wilayah kampus yang dipilih penjual pada formulir listing.* |
+
+#### Diagram Kelas
+
+<p align="center">
+<img alt="Class Diagram UC07" src="./assets/diagram/Diagram_Kelas_UC07.jpg" width="70%">
+</p>
+<p align="center">
+<i>Gambar 8. Diagram Kelas Use Case UC07</i>
+</p>
+<br>
+
+| ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
+| :--- | :--- | :--- | :--- |
+| *C02* | *Penjual* | *idPengguna, nama* | *buatListing(), unggahFoto()* |
+| *C05* | *ListingBarang* | *idListing, idPenjual, judul, harga, deskripsiKondisi, idKategori, idLokasi, status, waktuUnggah* | *validasiTipeData(), validasiKelengkapanIsian(), simpanListing(), terbitkanKeKatalog()* |
+| *C06* | *FotoListing* | *idFoto, idListing, namaBerkas, format, ukuran, urutan, pathBerkas* | *validasiFormat(), validasiUkuran(), validasiJumlahFoto(), simpanFoto()* |
+| *C07* | *Kategori* | *idKategori, namaKategori* | *getDaftarKategori(), validasiKategori()* |
+| *C08* | *LokasiCOD* | *idLokasi, namaLokasi, kampus* | *getDaftarLokasi()* |
+
+### 4.2.8 Use Case UC08
+
+**Nama Use Case:** *Melihat Daftar Listing Milik Sendiri*
+
+#### Identifikasi Kelas
+
+| ID Kelas | Nama Kelas | Deskripsi Kelas |
+| :--- | :--- | :--- |
+| *C02* | *Penjual* | *Pengguna pemilik listing yang membuka halaman "Listing Saya" untuk mengelola jualannya.* |
+| *C04* | *SesiOtentikasi* | *Mengidentifikasi ID penjual dari sesi yang sedang aktif sebagai dasar pengambilan data listing.* |
+| *C05* | *ListingBarang* | *Menyediakan seluruh listing yang berelasi dengan ID penjual beserta status masing-masing ("Tersedia"/"Terjual"), termasuk riwayat listing yang sudah terjual.* |
+
+#### Diagram Kelas
+
+<p align="center">
+<img alt="Class Diagram UC08" src="./assets/diagram/Diagram_Kelas_UC08.jpg" width="70%">
+</p>
+<p align="center">
+<i>Gambar 9. Diagram Kelas Use Case UC08</i>
+</p>
+<br>
+
+| ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
+| :--- | :--- | :--- | :--- |
+| *C02* | *Penjual* | *idPengguna, nama* | *lihatDaftarListingSendiri()* |
+| *C04* | *SesiOtentikasi* | *idSesi, idPengguna, token* | *getIdPenggunaDariToken()* |
+| *C05* | *ListingBarang* | *idListing, idPenjual, judul, harga, status, waktuUnggah* | *getListingByPenjual(), kelompokkanBerdasarkanStatus(), getRiwayatTerjual()* |
 
 > Lanjutkan pola **4.2.x** untuk setiap use case pada 3.2.
 
